@@ -5,169 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNEAKERS EDUARXX</title>
     <style>
-.carousel {
-  position: relative;
-  width: 500px;
-  max-width: 500px;
-  margin:  auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.carousel-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-images img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.carousel-buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-.carousel-buttons button {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 18px;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-}
-
-.carousel-buttons button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-        .Jalate{
-            text-align: center;
-            color: #585858;
-            font-size: 20px;
-
+        *, *::before, *::after {
+            box-sizing: border-box;
         }
-        .logo{
-            height: 10cm;
-            width: 10cm;
-            display: block;
-            margin: auto;
-            margin-top: 90PX;
-
-        }
-        .anuncio{
-            margin-top: 60px;
-            text-align: center;
-            font-size: 45px;
-            color: #000000;
-        }
-        video{
-            display: block;
-            margin: auto;
-            margin-top: -40px;
-        }
-        table {
-    width: 80%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    font-family: Arial, sans-serif;
-    }
-    th, td {
-    border: 1px solid #878787;
-    padding: 10px;
-    text-align: center;
-    }
-    th {
-    background-color: #222;
-    color: #ffffff;
-    }
-    caption {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-weight: bold;
-    }
-        .precio{
-            font-size: 30px;
-            color: rgb(170, 5, 5);
-        }
-        ul {
-            list-style-position: inside;
-            text-align: left;
-            font-size: 15px;
-            color: #575757;
-
-        }
-        .separador-principal{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-        .separador-secundario{
-            position: absolute;
-            top: 140%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .separador-terciario {
-            position: absolute;
-            top: 220%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .separador-cuarto {
-            position: absolute;
-            top: 277%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .separador-quinto {
-            position: absolute;
-            top: 350%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            
-        }
-        .separador-sexto{
-            position: absolute;
-            top: 400%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            }
-
-        .bienvenido{
-            text-align: center;
-            font-size: 45px;
-            color: #000000;
-
-        }
-
-        .texto-con-sombra {
-            position: relative;
-            font-size: 80px;
-            color: #ffffff;
-            text-shadow: 7px 6px 9px rgba(0, 0, 0, 9.9);  
-            z-index: 2;
-}
-.texto-con-sombras {
-            font-size: px;
-            color: #ffffff;
-            text-shadow: 7px 6px 9px rgba(0, 0, 0, 9.9);  
-}
-.ubicacion {
-            font-size: 50px;
-            color: #ffffff;
-}
 
         body {
             font-family: Arial, sans-serif;
@@ -175,104 +15,246 @@
             padding: 0;
             background-color: #f4f4f4;
         }
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: -15px;
-            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.66) 60%, rgba(0, 0, 0, 0.744) 100%);
-            pointer-events: none;
-            z-index: 1;
-}
+
         header {
             color: white;
-            padding: 300px;
             text-align: center;
             background-image: url('portada.jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;background-attachment: fixed;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.66) 60%, rgba(0, 0, 0, 0.744) 100%);
+            z-index: 1;
+        }
+
+        header h1{
+            position: relative;
+            z-index: 2;
+            font-size: 3rem;
+            text-shadow: 7px 6px 9px rgba(0, 0, 0, 0.9);
+
 
         }
-        section {
-            padding: 20px;
+        .separador-principal{
+          position: relative;
+            width: 70%;
+            height: 4px;
+            background-color: rgb(243, 78, 78);
+            margin: 40px auto;
+            display: block;
+            z-index: 2;
         }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
+        .separador {
+            width: 70%;
+            height: 4px;
+            background-color: rgb(243, 78, 78);
+            margin: 40px auto;
+            display: block;
         }
+
+        .bienvenido {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000;
+        }
+
         .bienvenido-item {
-            background-color: #ffffff;
-            padding: 25px;
+            background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 25cm;
-            text-align: center;
-            font-size: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            font-size: 1rem;
+            color: #868484;
         }
-        .service {
-            background-color: #ad0909;
-            padding: 15px;
-            border-radius: 0px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 110%;
-            margin-left: -5%;
-            text-align: center;
-        }
-        .service-item h3 {
-            margin-top: 100px;
-        }
+
         .gallery {
             display: flex;
-            justify-content: space-between;
-            margin-top: 50px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
         }
+
         .gallery-item {
-            width: 45%;
+            flex: 1 1 300px;
             text-align: center;
-            margin-bottom: 20px;
         }
+
         .gallery-item img {
-            width: 50%;
-            height: auto;
+            width: 100%;
+            max-width: 300px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        .precio {
+            font-size: 1.5rem;
+            color: rgb(170, 5, 5);
+        }
+
+        ul {
+            list-style-position: inside;
+            text-align: left;
+            font-size: 0.95rem;
+            color: #575757;
+            padding: 0 20px;
+        }
+
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 30px auto;
+        }
+
+        th, td {
+            border: 1px solid #878787;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #222;
+            color: #fff;
+        }
+
+        caption {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .anuncio {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 40px;
+        }
+
+        video {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            height: auto;
+        }
+
+        .logo {
+            display: block;
+            margin: 40px auto;
+            max-width: 40vw;
+            height: auto;
+        }
+
+        .Jalate {
+            text-align: center;
+            color: #585858;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 90%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .ubicacion {
+            font-size: 2rem;
+            text-align: center;
+            background-color: #ad0909;
+            color: white;
+            padding: 15px;
+            margin: 40px 0;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+
+        .whatsapp-btn, .tel {
+            display: inline-block;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .whatsapp-btn {
+            background-color: #25d366;
+        }
+
+        .tel {
+            background-color: #06a2c9;
+        }
+
         footer {
             background-color: #8c1111;
             color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             margin-top: 40px;
         }
 
-        .contact-form button:hover {
-            background-color: #218838;
-        }
-        .whatsapp-btn {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .tel {
-            display: inline-block;
-            background-color: #06a2c9;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .whatsapp-btn:hover {
-            background-color: #128c7e;
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .gallery-item img {
+                max-width: 90%;
+            }
+            .carousel-buttons button {
+                font-size: 1rem;
+                padding: 8px;
+            }
         }
     </style>
+
 </head>
 <body>
 
@@ -293,7 +275,7 @@
         </div>
 </section>
 
-<div class="separador-secundario" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
+<div class="separador" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
 
 <section>
 
@@ -330,7 +312,7 @@
         </div>
     </div>
 
-    <div class="separador-terciario" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
+    <div class="separador" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
 
 </section>
 <table border="1">
@@ -407,20 +389,20 @@
     </tbody>
 </table>
 
-<div class="separador-cuarto" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
+<div class="separador" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
 
 <p class="anuncio" style="font-family: sans-serif; "><strong >Video promocional </strong></p>
 <section>
     <video src="anuncio.mp4" controls autoplay height="50%" width="50%"> </video>
 </section>
 
-<div class="separador-quinto" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
+<div class="separador" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
 
 <img src="logo.png" class="logo"></img>
 
 <p class="Jalate"> ¡¡¡Jalate a SNEAKERS EDUARXX tu tienda de tenis favorita, con las ultimas tendencias en la moda de zapateria!!!</p>
 
-<div class="separador-sexto" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
+<div class="separador" style="width: 70%; height: 4px; background-color: rgb(243, 78, 78);"></div>
 
 <section>
 
@@ -452,13 +434,13 @@
     <h2 class="ubicacion service" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">UBICACION Y CONTACTO</h2>
 </section>
 <section>
-    <h2> Ubicación</h2>
+    <h2 style="text-align: center;"> Ubicación</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!4v1745007763276!6m8!1m7!1sjFE4Q4AZNZKFyoZ67mmpiw!2m2!1d19.51658041852401!2d-99.07048059942115!3f340.72276016763885!4f-3.7552035212086707!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p>Direccion: Calle Benito Canales 765, Salado Xalostoc, Ecatepec de morelos Estado de México.</p>
+    <p style="text-align: center;">Direccion: Calle Benito Canales 765, Salado Xalostoc, Ecatepec de morelos Estado de México.</p>
 </section>
 <section>
-    <h2>Contacto</h2>
-    <p>¡Solicita tu par favorito hoy mismo!</p>
+    <h2 style="text-align: center;">Contacto</h2>
+    <p style="text-align: center;">¡Solicita tu par favorito hoy mismo!</p>
 
 
     <a href="https://wa.me/5555912720" class="whatsapp-btn" target="_blank">¡Contáctanos por WhatsApp!</a>
@@ -489,8 +471,6 @@
     function prevSlide() {
       showSlide(index - 1);
     }
-  
-    // Cambio automático cada 5 segundos
     setInterval(nextSlide, 2000);
   </script>
   
